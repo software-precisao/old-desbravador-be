@@ -1,0 +1,1156 @@
+{
+	"info": {
+		"_postman_id": "8a8a452f-0fca-4c1e-84a1-a88af2e40bf6",
+		"name": "Desbravador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3708259"
+	},
+	"item": [
+		{
+			"name": "Contract Trader",
+			"item": [
+				{
+					"name": "Get  Contract Trader",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/contractTrader?userId=1&contractId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contractTrader"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1"
+								},
+								{
+									"key": "contractId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create   Contract Trader",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n       \"userId\": 1,  \r\n        \"contractId\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractTrader"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  Contract  Tader",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {     \"Id\":1,\r\n       \"contractTraderId\": 1,  \r\n        \"contractExchangeId\": 1,\r\n        \"credential\": \"fRbF7o6kYPgTyskmUIvS981VE0S3g4JhbbO3PdrxMfCt3P9mBMmMZ5gZzhejsvy5\",  \r\n        \"password\": \"KCcN3qWEqej51YhMfpXjKsW3Cv8BMCCujrXgogzIaXCr0bhVh01kHGL22A2Us3RG\",\r\n        \"walletName\": \"Aquarium\",  \r\n        \"walletKeyHash\":\"HashKeyAquarium\" ,\r\n        \"keyAPI\": \"1835c96b6da191a869b41f93619e6c6205520eee964d4516eaec756eb4da4f79\",  \r\n        \"secretAPI\": \"4596bbb1026da5e3682dbb0fc29aba0534bc3479c9ba9233e0e5937cf10ba69e\",\r\n         \"typeAccount\": 2\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractTrader"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Contract  Trader",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/contractTrader"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contract Setup",
+			"item": [
+				{
+					"name": "Get  Contract Setup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/contractSetup?contractId=1&setupId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contractSetup"
+							],
+							"query": [
+								{
+									"key": "contractId",
+									"value": "1"
+								},
+								{
+									"key": "setupId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create  Contract Setup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n       \"contractId\": 1,  \r\n        \"exchangeId\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractSetup"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  Contract Exchange",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n  \"Id\":1,\r\n  \"contractId\": 1,  \r\n  \"exchangeId\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractSetup"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Contract  Trader",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/contractSetup?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contractSetup"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setup",
+			"item": [
+				{
+					"name": "Get  Setup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/setup?fantasyName=Desbravador",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"setup"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "personId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Desbravador",
+									"disabled": true
+								},
+								{
+									"key": "fantasyName",
+									"value": "Desbravador"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create  Setup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"personId\": 1,\r\n    \"name\": \"Setup Aquarium Post \",\r\n    \"fantasyName\": \"Desbravador\"         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/setup"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  Contract Exchange",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n  \"Id\":1,\r\n  \"contractId\": 1,  \r\n  \"exchangeId\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractSetup"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Contract  Trader",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/contractSetup?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contractSetup"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contract Trader Account",
+			"item": [
+				{
+					"name": "Get  Contract Trader",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/contractTraderAccount?contractTraderId=1&contractExchangeId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contractTraderAccount"
+							],
+							"query": [
+								{
+									"key": "contractTraderId",
+									"value": "1"
+								},
+								{
+									"key": "contractExchangeId",
+									"value": "1"
+								},
+								{
+									"key": "credential",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "walletName",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "walletKeyHash",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "typeAccount",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create   Contract Trader",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"contractExchangeId\": 1,\r\n    \"credential\": \"fRbF7o6kYPgTyskmUIvS981VE0S3g4JhbbO3PdrxMfCt3P9mBMmMZ5gZzhejsvy5\",\r\n    \"password\": \"KCcN3qWEqej51YhMfpXjKsW3Cv8BMCCujrXgogzIaXCr0bhVh01kHGL22A2Us3RG\",\r\n    \"walletName\": \"Aquarium\",\r\n    \"walletKeyHash\": \"HashKeyAquarium\",\r\n    \"keyAPIFuture\": \"1835c96b6da191a869b41f93619e6c6205520eee964d4516eaec756eb4da4f79\",\r\n    \"secretAPIFuture\": \"4596bbb1026da5e3682dbb0fc29aba0534bc3479c9ba9233e0e5937cf10ba69e\",\r\n    \"keyAPISpot\": \"\",\r\n    \"secretAPISpot\": \"\",\r\n    \"typeAccount\": 2,\r\n    \"createdAt\": \"2022-06-23T22:35:32.000Z\",\r\n    \"updatedAt\": \"2022-06-23T22:35:32.000Z\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractTraderAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Create   contract Trader",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n       \"exchangeId\": 1,  \r\n        \"contractId\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractTraderAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  contract Trader",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/contractTraderAccount"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contract Exchange",
+			"item": [
+				{
+					"name": "Get  contract Exchange",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/contractExchange?exchangeId=68&contractId=1&id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contractExchange"
+							],
+							"query": [
+								{
+									"key": "exchangeId",
+									"value": "68"
+								},
+								{
+									"key": "contractId",
+									"value": "1"
+								},
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create   contract Exchange",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n       \"exchangeId\": 1,  \r\n        \"contractId\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contractExchange"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  contract Exchange",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/contractExchange"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  contract Exchange",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/contractExchange"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contract",
+			"item": [
+				{
+					"name": "Get  Contract",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/contract?id=3&personId=1&paymentForm=1&status=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"contract"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								},
+								{
+									"key": "personId",
+									"value": "1"
+								},
+								{
+									"key": "beginDate",
+									"value": "2022-04-25 16:44:00.000",
+									"disabled": true
+								},
+								{
+									"key": "endDate",
+									"value": "2022-06-22 21:00:00.000",
+									"disabled": true
+								},
+								{
+									"key": "dueDate",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "paymentForm",
+									"value": "1"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create   Contract",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \r\n       \"personId\": 1,  \r\n        \"beginDate\": \"2022-06-22 21:00:00.000\",\r\n       \"endDate\":\"2022-06-22 21:00:00.000\",      \r\n        \"dueDate\":1,\r\n        \"paymentForm\":1,\r\n        \"status\": 1\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/contract"
+					},
+					"response": []
+				},
+				{
+					"name": "Update  Contract",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/exchangeContract/binance?contractId=1&exchangeId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"exchangeContract",
+								"binance"
+							],
+							"query": [
+								{
+									"key": "contractId",
+									"value": "1"
+								},
+								{
+									"key": "exchangeId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Contract",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/exchangeContract/binance?contractId=1&exchangeId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"exchangeContract",
+								"binance"
+							],
+							"query": [
+								{
+									"key": "contractId",
+									"value": "1"
+								},
+								{
+									"key": "exchangeId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session Configuration",
+			"item": [
+				{
+					"name": "getTrader",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/sessionConfiguration/getrader?contractId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sessionConfiguration",
+								"getrader"
+							],
+							"query": [
+								{
+									"key": "contractId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSetupIndicator",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/sessionConfiguration/getSetupIndicator?setupId=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sessionConfiguration",
+								"getSetupIndicator"
+							],
+							"query": [
+								{
+									"key": "setupId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListTraderSession",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/sessionConfiguration/getListTraderSession?contractId=1&status=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sessionConfiguration",
+								"getListTraderSession"
+							],
+							"query": [
+								{
+									"key": "contractId",
+									"value": "1"
+								},
+								{
+									"key": "status",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateTraderSession",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n           \r\n            \"contractTraderId\": 1,\r\n            \"contractTraderAccountId\": 1,\r\n            \"name\": \"Aquarium Trader Sem roolBack\",\r\n            \"beginDateSession\": \"2022-06-26T18:35:32.000Z\",\r\n            \"endDateSession\": \"2022-06-26T19:35:32.000Z\",\r\n            \"allocatedPercentage\": 10,\r\n            \"securityPercentage\": 5,\r\n            \"allocatedValue\": 5,\r\n            \"typeOrder\": 1,\r\n            \"typeRisk\": 1,\r\n            \"typeUseBalance\": 1,\r\n            \"typeRebalancing\": 1,\r\n            \"typeSenseOrder\": 1,\r\n            \"typeOrderManagement\": 1,\r\n            \"typeMarketplace\": 1,\r\n            \"typeCurrencyGroup\": 1,\r\n            \"typeDocker\": 0,\r\n             \"status\": 1,\r\n            \"createdAt\": \"2022-06-26T19:35:32.000Z\",\r\n            \"updatedAt\": \"2022-06-26T19:35:32.000Z\",\r\n            \"ContractTraderAccountId\": 1,            \r\n           \r\n            \"TraderSessionSetups\": [\r\n                {\r\n                    \r\n                    \"contractSetupId\": 2,\r\n                    \"TraderSessionSetupIndicators\": [\r\n                        {\r\n                           \r\n                            \"traderSessionSetupId\": 1,\r\n                            \"typeStrategy\": 1,\r\n                            \"typePeriod\": 1,\r\n                            \"minEntryWeight\": 1,\r\n                            \"allowCancelOrder\": true,\r\n                            \"allowCancelSession\": true,\r\n                            \"renkoPriority\": 1,\r\n                            \"renkoWeight\": 1,\r\n                            \"typeRenko\": 1,\r\n                            \"typeRenkoHeight\": 1,\r\n                            \"renkoTick\": 1,\r\n                            \"renkoRetroactiveAnalysis\": true,\r\n                            \"renkoBlocksTrend\": 1,\r\n                            \"renkoTrendChangeBlocks\": 1,\r\n                            \"macdPriority\": 1,\r\n                            \"macdWeight\": 1,\r\n                            \"typeMacdInput\": 1,\r\n                            \"typeMacdAverage\": 1,\r\n                            \"macdMMLPPeriod\": 1,\r\n                            \"macdMMCPPeriod\": 1,\r\n                            \"macdMMSPeriod\": 1,\r\n                            \"typeMacdUnMMLP\": 1,\r\n                            \"typeMacdUnMMCP\": 1,\r\n                            \"typeMacdUnMMS\": 1,\r\n                            \"srsiPriority\": 1,\r\n                            \"srsiWeight\": 1,\r\n                            \"typeSrsiAverage\": 1,\r\n                            \"typeSrsiInputCondition\": 1,\r\n                            \"srsiMMEPeriod\": 1,\r\n                            \"typeSrsiUnMME\": 1,\r\n                            \"mm5022Priority\": 1,\r\n                            \"mm5022Weight\": 1,\r\n                            \"typeMm5022Input\": 1,\r\n                            \"mm5022MMLPPeriod\": 1,\r\n                            \"mm5022MMCPPeriod\": 1,\r\n                            \"typeMm5022Average\": 1,\r\n                            \"typeMm5022UnMMLP\": 1,\r\n                            \"typeMm5022UnMMCP\": 1,\r\n                            \"bbPriority\": 1,\r\n                            \"bbWeight\": 1,\r\n                            \"typeBBAverage\": 1,\r\n                            \"typeBBVolatility\": 1,\r\n                            \"typeBBSaleIndication\": 1,\r\n                            \"typeBBPurchaseIndication\": 1,\r\n                            \"bbMMLPPeriod\": 1,\r\n                            \"bbMMMPPeriod\": 1,\r\n                            \"bbMMCPPeriod\": 1,\r\n                            \"typeBBUnMMLP\": 1,\r\n                            \"typeBBUnMMMP\": 1,\r\n                            \"typeBBUnMMCP\": 1,\r\n                            \"sTrendPriority\": 1,\r\n                            \"sTrendWeight\": 1,\r\n                            \"typeSTrendAverage\": 1,\r\n                            \"sTrendEvaluationPeriod\": 1,\r\n                            \"typeSTrendUnAverage\": 1,\r\n                            \"createdAt\": \"2022-06-26T19:35:32.000Z\",\r\n                            \"updatedAt\": \"2022-06-26T19:35:32.000Z\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"TraderSessionCoins\": [\r\n                {\r\n                    \r\n                    \"symbol\": \"ETH/USD\",\r\n                    \"percentageBudget\": 10,\r\n                    \"budgetValue\": 15,\r\n                    \"typePurchase\": 0\r\n                },\r\n                {\r\n                    \"id\": 4,\r\n                    \"symbol\": \"BNB/USD\",\r\n                    \"percentageBudget\": 10,\r\n                    \"budgetValue\": 15,\r\n                    \"typePurchase\": 0\r\n                },\r\n                {\r\n                    \"id\": 5,\r\n                    \"symbol\": \"SHIB/BRL\",\r\n                    \"percentageBudget\": 10,\r\n                    \"budgetValue\": 15,\r\n                    \"typePurchase\": 0\r\n                }\r\n            ]\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/sessionConfiguration/createTraderSession"
+					},
+					"response": []
+				},
+				{
+					"name": "updateTraderSession",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n   \r\n        {\r\n           \r\n            \"traderSessionId\":1,\r\n            \"contractTraderId\": 1,\r\n            \"contractTraderAccountId\": 1,\r\n            \"name\": \"Aquarium Trader Session Update 29/06/2022 \",\r\n            \"beginDateSession\": \"2022-06-26T18:35:32.000Z\",\r\n            \"endDateSession\": \"2022-06-26T19:35:32.000Z\",\r\n            \"allocatedPercentage\": 10,\r\n            \"securityPercentage\": 5,\r\n            \"allocatedValue\": 5,\r\n            \"typeOrder\": 1,\r\n            \"typeRisk\": 1,\r\n            \"typeUseBalance\": 1,\r\n            \"typeRebalancing\": 1,\r\n            \"typeSenseOrder\": 1,\r\n            \"typeOrderManagement\": 1,\r\n            \"typeMarketplace\": 1,\r\n            \"typeCurrencyGroup\": 1,\r\n             \"typeDocker\": 0,\r\n             \"status\": 1,\r\n            \"createdAt\": \"2022-06-26T19:35:32.000Z\",\r\n            \"updatedAt\": \"2022-06-26T19:35:32.000Z\",\r\n            \"ContractTraderAccountId\": 1,\r\n          \r\n            \"TraderSessionSetups\": [\r\n                {\r\n                    \"id\": 1,\r\n                    \"traderSessionId\": 1,\r\n                    \"TraderSessionSetupIndicators\": [\r\n                        {\r\n                            \"id\": 2,\r\n                            \"traderSessionSetupId\": 1,\r\n                            \"typeStrategy\": 2,\r\n                            \"typePeriod\": 2,\r\n                            \"minEntryWeight\": 2,\r\n                            \"allowCancelOrder\": true,\r\n                            \"allowCancelSession\": true,\r\n                            \"renkoPriority\": 2,\r\n                            \"renkoWeight\": 2,\r\n                            \"typeRenko\": 2,\r\n                            \"typeRenkoHeight\": 2,\r\n                            \"renkoTick\": 2,\r\n                            \"renkoRetroactiveAnalysis\": true,\r\n                            \"renkoBlocksTrend\": 2,\r\n                            \"renkoTrendChangeBlocks\": 2,\r\n                            \"macdPriority\": 2,\r\n                            \"macdWeight\": 2,\r\n                            \"typeMacdInput\": 2,\r\n                            \"typeMacdAverage\": 2,\r\n                            \"macdMMLPPeriod\": 2,\r\n                            \"macdMMCPPeriod\": 2,\r\n                            \"macdMMSPeriod\": 2,\r\n                            \"typeMacdUnMMLP\": 2,\r\n                            \"typeMacdUnMMCP\": 2,\r\n                            \"typeMacdUnMMS\": 2,\r\n                            \"srsiPriority\": 2,\r\n                            \"srsiWeight\": 2,\r\n                            \"typeSrsiAverage\": 2,\r\n                            \"typeSrsiInputCondition\": 2,\r\n                            \"srsiMMEPeriod\": 2,\r\n                            \"typeSrsiUnMME\": 2,\r\n                            \"mm5022Priority\": 2,\r\n                            \"mm5022Weight\": 1,\r\n                            \"typeMm5022Input\": 2,\r\n                            \"mm5022MMLPPeriod\": 2,\r\n                            \"mm5022MMCPPeriod\": 2,\r\n                            \"typeMm5022Average\": 2,\r\n                            \"typeMm5022UnMMLP\": 2,\r\n                            \"typeMm5022UnMMCP\": 2,\r\n                            \"bbPriority\": 2,\r\n                            \"bbWeight\": 2,\r\n                            \"typeBBAverage\": 2,\r\n                            \"typeBBVolatility\": 2,\r\n                            \"typeBBSaleIndication\": 2,\r\n                            \"typeBBPurchaseIndication\": 2,\r\n                            \"bbMMLPPeriod\": 2,\r\n                            \"bbMMMPPeriod\": 2,\r\n                            \"bbMMCPPeriod\": 2,\r\n                            \"typeBBUnMMLP\": 2,\r\n                            \"typeBBUnMMMP\": 2,\r\n                            \"typeBBUnMMCP\": 2,\r\n                            \"sTrendPriority\": 1,\r\n                            \"sTrendWeight\": 2,\r\n                            \"typeSTrendAverage\": 2,\r\n                            \"sTrendEvaluationPeriod\": 2,\r\n                            \"typeSTrendUnAverage\": 2,\r\n                            \"createdAt\": \"2022-06-26T19:35:32.000Z\",\r\n                            \"updatedAt\": \"2022-06-26T19:35:32.000Z\"\r\n                        }\r\n                    ]\r\n                }\r\n            ],\r\n            \"TraderSessionCoins\": [\r\n                {\r\n                    \"id\": 3,\r\n                    \"symbol\": \"ETH/USD Update1\",\r\n                    \"percentageBudget\": 10,\r\n                    \"budgetValue\": 15,\r\n                    \"typePurchase\": 0\r\n                },\r\n                {\r\n                    \"id\": 4,\r\n                    \"symbol\": \"BTC/USD Update2\",\r\n                    \"percentageBudget\": 10,\r\n                    \"budgetValue\": 15,\r\n                    \"typePurchase\": 0\r\n                },\r\n                {\r\n                    \"id\": 5,\r\n                    \"symbol\": \"SHIB/BRL Update1\",\r\n                    \"percentageBudget\": 10,\r\n                    \"budgetValue\": 15,\r\n                    \"typePurchase\": 0\r\n                }\r\n            ]\r\n        }\r\n    \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/sessionConfiguration/updateTraderSession"
+					},
+					"response": []
+				},
+				{
+					"name": "getTraderSession",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/sessionConfiguration/getTraderSession?sessionId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sessionConfiguration",
+								"getTraderSession"
+							],
+							"query": [
+								{
+									"key": "sessionId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/sessionConfiguration/getAccount?contractTraderId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sessionConfiguration",
+								"getAccount"
+							],
+							"query": [
+								{
+									"key": "contractTraderId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWalletBalance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "MerchantId",
+								"value": "0476A9FF-D941-EC4B-77E8-1EFCC7BB5719",
+								"type": "text"
+							},
+							{
+								"key": "MerchantKey",
+								"value": "cNjkLwpixh1HooiRG4MCQA5GNa9VyRHk9Qp5aQtB",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/sessionConfiguration/getWalletBalance?contractTraderAccountId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sessionConfiguration",
+								"getWalletBalance"
+							],
+							"query": [
+								{
+									"key": "contractTraderAccountId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  desbravadorback:
+    image: dockeraquarium/desbravador-back:1.0.0
+    container_name: desbravadorback
+    restart: unless-stopped
+    environment:
+      - versao=1.0.0
+      - PORT=8081
+      - TZ='America/Sao_Paulo'
+      - DB_HOST=192.168.0.171
+      - DB_PORT=32768
+      - DATABASE=aquarium
+      - DB_USER=root
+      - DB_PASSWORD=@Admin00
+      - URLBACK=https://backdesbravador.tecnetbrasil.com.br/
+    ports:
+      - "8081:8081"
+    volumes:
+      - /var/aquarium/assets:/app/assets
+      - /var/aquarium/assets/user:/app/assets/user
