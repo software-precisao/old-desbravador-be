@@ -4,7 +4,10 @@
   "description": "Back-end do Desbravador",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "pm2 start server.js --name desbravador-back",
+    "stop": "pm2 stop desbravador-back",
+    "restart": "pm2 restart desbravador-back",
+    "delete": "pm2 delete desbravador-back",
     "dev": "cross-env NODE_ENV=development nodemon server.js"
   },
   "keywords": [
@@ -24,6 +27,7 @@
     "moment-duration-format": "^2.3.2",
     "moment-timezone": "^0.5.34",
     "nodemailer": "^6.7.5",
+    "pm2": "^5.4.3",
     "qrcode": "^1.5.0",
     "sequelize": "^6.20.1",
     "speakeasy": "^2.0.0"
