@@ -1,5 +1,5 @@
 // const contractExchange = require('../models/contractExchange');
-// const Exchange = require('../models/Exchange');
+//const Exchange = require('../models/Exchange');
 const { ContractExchange,Exchange, Contract,sequelize } = require('../models');
 
 

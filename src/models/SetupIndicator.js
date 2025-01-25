@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   class SetupIndicator extends Model {
     static associate(models) {
       SetupIndicator.belongsTo(models.Setup, { foreignKey: 'setupId' });
+      
     }
   }
   SetupIndicator.init({

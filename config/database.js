@@ -12,14 +12,17 @@ module.exports = {
   database: DATABASE_DB,
   username: USER_DB,
   password: PASSWORD_DB,
-  dialect: 'mariadb',
+  dialect: 'mysql',
   logging: false,
-	define: {
-		timestamps: true,
-	},
-	dialectOptions: {
-		useUTC: false,
-		options: { requestTimeout: 300000 },
-	},
-	timezone: '-03:00'
-}
+  define: {
+    timestamps: true,
+  },
+  dialectOptions: {
+    timezone: 'Z', // Use 'Z' para UTC ou ajuste para sua região
+  },
+  timezone: '-03:00', // Define o timezone para o Sequelize
+  migrationStorageTableName: 'sequelize_meta',
+  migrations: {
+    path: './database/migrations',
+  },
+};

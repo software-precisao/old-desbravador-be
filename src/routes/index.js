@@ -12,6 +12,8 @@ const SessionConfigurationController = require('../controllers/sessionConfigurat
 const ContractSetupController = require('../controllers/contractSetup');
 const SetupController = require('../controllers/setup');
 const CreateTraderController = require('../controllers/createTrader');
+const ExchangeController = require('../controllers/exchange');
+const IndicatorController = require('../controllers/setupIndicator');
 
 
 
@@ -131,11 +133,9 @@ router.post('/createTrader', CreateTraderController.create)
 // router.get('/traderContract', TraderContractController.read)
 // router.delete('/traderContract/:id', TraderContractController.delete)
 
-// //**Exchange */
-// router.post('/exchange', ExchangeController.create)
-// router.patch('/exchange/:id', ExchangeController.update)
-// router.get('/exchange', ExchangeController.read)
-// router.delete('/exchange/:id', ExchangeController.delete)
+//**Exchange */
+router.post('/exchange', ExchangeController.createExchange)
+
 
 // //**ExchangeBanks */
 // router.post('/exchangeBank', ExchangeBankController.create)
@@ -181,11 +181,11 @@ router.post('/createTrader', CreateTraderController.create)
 // router.get('/whale', WhaleController.read)
 // router.delete('/whale/:id', WhaleController.delete)
 
-// //**Indicator */
-// router.post('/indicator', IndicatorController.create)
-// router.patch('/indicator/:id', IndicatorController.update)
-// router.get('/whindicatorale', IndicatorController.read)
-// router.delete('/indicator/:id', IndicatorController.delete)
+ //**Indicator */
+ router.post('/indicator', IndicatorController.create)
+ router.patch('/indicator/:id', IndicatorController.update)
+//  router.get('/whindicatorale', IndicatorController.read)  
+ router.delete('/indicator/:id', IndicatorController.delete)
 
 // //**SetupIndicator */
 // router.post('/setupIndicator', SetupIndicatorController.create)

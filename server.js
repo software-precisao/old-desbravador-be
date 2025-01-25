@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-
+//const startRabbitMQ = require('./src/services/rabbitmq');
 require('dotenv').config({ silent: true });
 require('./src/models/index')
 const port = normalizaPort(process.env.PORT || '80')
@@ -40,6 +40,14 @@ app.set('port', port);
 app.listen(app.get('port'), () => {
   console.log('Desbravador-Back listening on port: ', app.get('port'))
 });
+
+// startRabbitMQ()
+//   .then(() => {
+//     console.log('[*] RabbitMQ iniciado com sucesso');
+//   })
+//   .catch((err) => {
+//     console.error('[!] Erro ao iniciar RabbitMQ:', err.message);
+//   });
 
 // Normaliza a porta
 function normalizaPort(val) {

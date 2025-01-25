@@ -26,12 +26,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/contractTrader?userId=1&contractId=1",
+							"raw": "http://localhost:8081/contractTrader?userId=1&contractId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"contractTrader"
 							],
@@ -74,7 +74,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractTrader"
+						"url": "http://localhost:8081/contractTrader"
 					},
 					"response": []
 				},
@@ -103,7 +103,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractTrader"
+						"url": "http://localhost:8081/contractTrader"
 					},
 					"response": []
 				},
@@ -123,7 +123,7 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:8080/contractTrader"
+						"url": "http://localhost:8081/contractTrader"
 					},
 					"response": []
 				}
@@ -149,12 +149,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/contractSetup?contractId=1&setupId=1",
+							"raw": "http://localhost:8081/contractSetup?contractId=1&setupId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"contractSetup"
 							],
@@ -197,7 +197,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractSetup"
+						"url": "http://localhost:8081/contractSetup"
 					},
 					"response": []
 				},
@@ -226,7 +226,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractSetup"
+						"url": "http://localhost:8081/contractSetup"
 					},
 					"response": []
 				},
@@ -247,12 +247,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/contractSetup?id=1",
+							"raw": "http://localhost:8081/contractSetup?id=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"contractSetup"
 							],
@@ -288,12 +288,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/setup?fantasyName=Desbravador",
+							"raw": "http://localhost:8081/setup?fantasyName=Desbravador",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"setup"
 							],
@@ -347,7 +347,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/setup"
+						"url": "http://localhost:8081/setup"
 					},
 					"response": []
 				},
@@ -376,7 +376,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractSetup"
+						"url": "http://localhost:8081/contractSetup"
 					},
 					"response": []
 				},
@@ -397,12 +397,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/contractSetup?id=1",
+							"raw": "http://localhost:8081/contractSetup?id=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"contractSetup"
 							],
@@ -438,12 +438,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/contractTraderAccount?contractTraderId=1&contractExchangeId=1",
+							"raw": "http://localhost:8081/contractTraderAccount?contractTraderId=1&contractExchangeId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"contractTraderAccount"
 							],
@@ -506,7 +506,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractTraderAccount"
+						"url": "http://localhost:8081/contractTraderAccount"
 					},
 					"response": []
 				},
@@ -535,7 +535,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractTraderAccount"
+						"url": "http://localhost:8081/contractTraderAccount"
 					},
 					"response": []
 				},
@@ -555,7 +555,7 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:8080/contractTraderAccount"
+						"url": "http://localhost:8081/contractTraderAccount"
 					},
 					"response": []
 				}
@@ -581,12 +581,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/contractExchange?exchangeId=68&contractId=1&id=1",
+							"raw": "http://localhost:8081/contractExchange?exchangeId=68&contractId=1&id=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"contractExchange"
 							],
@@ -633,7 +633,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contractExchange"
+						"url": "http://localhost:8081/contractExchange"
 					},
 					"response": []
 				},
@@ -653,7 +653,7 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:8080/contractExchange"
+						"url": "http://localhost:8081/contractExchange"
 					},
 					"response": []
 				},
@@ -673,7 +673,7 @@
 								"type": "text"
 							}
 						],
-						"url": "http://localhost:8080/contractExchange"
+						"url": "http://localhost:8081/contractExchange"
 					},
 					"response": []
 				}
@@ -699,12 +699,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/contract?id=3&personId=1&paymentForm=1&status=1",
+							"raw": "http://localhost:8081/contract?id=3&personId=1&paymentForm=1&status=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"contract"
 							],
@@ -775,7 +775,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/contract"
+						"url": "http://localhost:8081/contract"
 					},
 					"response": []
 				},
@@ -796,12 +796,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/exchangeContract/binance?contractId=1&exchangeId=1",
+							"raw": "http://localhost:8081/exchangeContract/binance?contractId=1&exchangeId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"exchangeContract",
 								"binance"
@@ -837,12 +837,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/exchangeContract/binance?contractId=1&exchangeId=1",
+							"raw": "http://localhost:8081/exchangeContract/binance?contractId=1&exchangeId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"exchangeContract",
 								"binance"
@@ -883,12 +883,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/sessionConfiguration/getrader?contractId=1",
+							"raw": "http://localhost:8081/sessionConfiguration/getrader?contractId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"sessionConfiguration",
 								"getrader"
@@ -920,12 +920,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/sessionConfiguration/getSetupIndicator?setupId=2",
+							"raw": "http://localhost:8081/sessionConfiguration/getSetupIndicator?setupId=2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"sessionConfiguration",
 								"getSetupIndicator"
@@ -957,12 +957,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/sessionConfiguration/getListTraderSession?contractId=1&status=0",
+							"raw": "http://localhost:8081/sessionConfiguration/getListTraderSession?contractId=1&status=0",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"sessionConfiguration",
 								"getListTraderSession"
@@ -1006,7 +1006,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/sessionConfiguration/createTraderSession"
+						"url": "http://localhost:8081/sessionConfiguration/createTraderSession"
 					},
 					"response": []
 				},
@@ -1035,7 +1035,7 @@
 								}
 							}
 						},
-						"url": "http://localhost:8080/sessionConfiguration/updateTraderSession"
+						"url": "http://localhost:8081/sessionConfiguration/updateTraderSession"
 					},
 					"response": []
 				},
@@ -1056,12 +1056,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/sessionConfiguration/getTraderSession?sessionId=1",
+							"raw": "http://localhost:8081/sessionConfiguration/getTraderSession?sessionId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"sessionConfiguration",
 								"getTraderSession"
@@ -1093,12 +1093,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/sessionConfiguration/getAccount?contractTraderId=1",
+							"raw": "http://localhost:8081/sessionConfiguration/getAccount?contractTraderId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"sessionConfiguration",
 								"getAccount"
@@ -1130,12 +1130,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8080/sessionConfiguration/getWalletBalance?contractTraderAccountId=1",
+							"raw": "http://localhost:8081/sessionConfiguration/getWalletBalance?contractTraderAccountId=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
 								"sessionConfiguration",
 								"getWalletBalance"

@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       TraderSession.hasMany(models.TraderSessionStartStop, { foreignKey: 'traderSessionId' });
       TraderSession.belongsTo(models.ContractTrader, { foreignKey: 'contractTraderId' });
       TraderSession.belongsTo(models.ContractTraderAccount, { foreignKey: 'contractTraderAccountId' });
+      
     }
   }
   TraderSession.init({

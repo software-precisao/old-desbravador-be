@@ -16,6 +16,7 @@
   "author": "Ragner Moura",
   "license": "ISC",
   "dependencies": {
+    "amqplib": "^0.10.5",
     "axios": "^0.27.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
@@ -26,6 +27,7 @@
     "moment": "^2.29.3",
     "moment-duration-format": "^2.3.2",
     "moment-timezone": "^0.5.34",
+    "mysql2": "^3.12.0",
     "nodemailer": "^6.7.5",
     "pm2": "^5.4.3",
     "qrcode": "^1.5.0",
@@ -33,7 +35,8 @@
     "speakeasy": "^2.0.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.16",
-    "sequelize-cli": "^6.4.1"
+    "sequelize-cli": "^6.6.2"
   }
 }
